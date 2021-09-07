@@ -10,7 +10,7 @@ git clone https://github.com/gdk46/gerador-de-parcela.git
 ou click no [link aqui](https://github.com/gdk46/gerador-de-parcela/archive/main.zip)
 
 
-### em corporando o gerador de parcelas ao HTML
+### Importe o Gerador de parcela no HTML
 
 No HTML requisite o script.
 

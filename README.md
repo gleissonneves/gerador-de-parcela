@@ -9,6 +9,7 @@ git clone https://github.com/gleissonneves/gerador-de-parcela.git
 ```
 ou click no [link aqui](https://github.com/gleissonneves/gerador-de-parcela/archive/main.zip)
 
+Se preferir faça a instalação usando o [npm](https://www.npmjs.com/package/gerador-de-parcela).
 
 ### Importe o Gerador de parcela no HTML
 
@@ -34,9 +35,9 @@ No HTML requisite o script.
 generateDate(day, month, year, looping)
  
 day recebe o dia;
-month recebe a quantidade de messes;
-year recebe o ano recorrente;
-looping recebe a quantidade de loops e é a responssável por todo processo.
+month representa a quantidade de messes;
+year representa o ano recorrente;
+looping representa a quantidade de meses que será gerado a(s) data(s).
 ```
  
 ```html

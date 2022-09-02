@@ -1,0 +1,20 @@
+{
+  "name": "gerador-de-parcela",
+  "version": "1.0.0",
+  "description": "Gerador de parcela. Gere parcelas facimente, facilite o desenvolvimento utilizando para gerar por exemplo mensalidade, repasse, vendas entre outras ações.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleissonneves/gerador-de-parcela.git"
+  },
+  "keywords": ["parcelas", "gerador", "financeiro", "gerenciador", "gerar"],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gleissonneves/gerador-de-parcela/issues"
+  },
+  "homepage": "https://gleissonneves.github.io/gerador-de-parcela"
+}

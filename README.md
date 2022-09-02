@@ -4,19 +4,25 @@ Gerador de parcela. Gere parcelas facimente, facilite o desenvolvimento utilizan
 
 Para começar clone o repositório com o comando.
 ```
-git clone https://github.com/gdk46/gerador-de-parcela.git
+git clone https://github.com/gleissonneves/gerador-de-parcela.git
 
 ```
-ou click no [link aqui](https://github.com/gdk46/gerador-de-parcela/archive/main.zip)
+ou click no [link aqui](https://github.com/gleissonneves/gerador-de-parcela/archive/main.zip)
 
 
 ### Importe o Gerador de parcela no HTML
 
 No HTML requisite o script.
 
-```
+```html
 <body>
-    <script src="./generateParcel.js"></script>
+  <script>
+    const resource = require('gerador-de-parcela');
+    let datas = resource.generateDate(23, 11, 2022, 12)
+    let parcel = resource.generateParcel(datas, 'R$: 200.00')
+    
+    console.log(datas, parcel);  
+  </script>
 </body>
  ```
   
@@ -33,12 +39,12 @@ year recebe o ano recorrente;
 looping recebe a quantidade de loops e é a responssável por todo processo.
 ```
  
-```
+```html
 <body>
-    <script src="./generateParcel.js"></script>
     <script>
       // Example:
-      let arrDate = generateDate(30, 12, 2020, 1)
+      const resource = require('gerador-de-parcela');
+      let datas = resource.generateDate(23, 11, 2022, 12)
     </script>
 </body>
 ```
@@ -52,40 +58,37 @@ looping recebe a quantidade de loops e é a responssável por todo processo.
 generateParcel(arrDate, valueParcel)
  
 arrDate recebe um array de data(s) que nos devolve
-indice, o valor da(s) parcela(s) ,a data e o status que por padrão é "Em aberto";
+indice, o valor da(s) parcela(s), a data e o status que por padrão é "Em aberto";
 
 valueParcel é o valor padrão de finido da parcela.
 ```
  
-```
+```html
 <body>
     <script src="./generateParcel.js"></script>
     <script>
       // Example:
-      let arrDate = generateDate(30, 12, 2020, 1)
-      let parcel  = generateParcel(arrDate, "20,59");
+      const resource = require('gerador-de-parcela');
+
+      // gera uma parcela única para o data '01-01-1999'
+      let parcelSingle = test.generateParcel(['01-01-1999'], 'R$: 200.00')
+
+      // gera parcelas durante o periodo de 5 anos, sendo a data de pagamento todo dia 23 começando a partir do mês 11 do ano de 2022
+      let fiveYears = 12 * 5;
+
+      let datas = resource.generateDate(23, 11, 2022, fiveYears);
+      let parcel = resource.generateParcel(datas, 'R$: 200.00');
     </script>
 </body>
 ```
   
   
-### Aquela espiadinha
+#### Aquela espiadinha
 
 Para deixar a mostra os dados devemos utilizar o console já que
 ele nos permite ver as propriedades, volores de objetos, Arrays entre outros elementos.
 
+## Licença
+Este projeto esta sobe a licença MIT.
 
-```
-<body>
-    <script src="./generateParcel.js"></script>
-    <script>
-      // Example:
-      let arrDate = generateDate(30, 12, 2020, 1)
-      let parcel  = generateParcel(arrDate, "20,59");
-      console.log(parcel)
-    </script>
-</body>
-```
-
-Nesse caso iremos gerar uma parcela para o dia 30 do mês 1 do ano de 2020 no valor de 20,59.
-  
+Feito com :heart: por Gleisson Neves 👋🏽

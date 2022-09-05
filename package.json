@@ -10,11 +10,20 @@
     "type": "git",
     "url": "git+https://github.com/gleissonneves/gerador-de-parcela.git"
   },
-  "keywords": ["parcelas", "gerador", "financeiro", "gerenciador", "gerar"],
+  "keywords": [
+    "parcelas",
+    "gerador",
+    "financeiro",
+    "gerenciador",
+    "gerar"
+  ],
   "author": "",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gleissonneves/gerador-de-parcela/issues"
   },
-  "homepage": "https://gleissonneves.github.io/gerador-de-parcela"
+  "homepage": "https://gleissonneves.github.io/gerador-de-parcela",
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  }
 }
